@@ -41,7 +41,7 @@ jikirSchema.pre('save', function (next) {
     this.jikir.push({ name: 'Allahu Akbar' });
   }
   next();
-});
+}); 
 
 jikirSchema.pre('save', function (next) {
   const currentDate = new Date();

@@ -16,8 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Cors
 const cors = require('cors');
 app.use(cors({
-  origin: "http://localhost:5173",
-  methods: ["GET", "POST", "PUT", "PATCH"]
+  origin: "*",
 }));
 
 // DataBase

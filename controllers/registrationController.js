@@ -30,8 +30,7 @@ const findUser = async (req, res) => {
       res.status(200).send({
         success: true,
         message: "User found",
-        data: user
-      });
+      }); 
     } 
     else {
       res.status(201).send({
