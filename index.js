@@ -1,6 +1,10 @@
 // Express
 const express = require('express');
 const app = express();
+
+const cors = require('cors');
+app.use(cors());
+
 app.use(express.json());
 
 const port = 3100;
@@ -14,12 +18,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Cors
-const cors = require('cors');
-app.use(cors({
-  origin: "*",
-  methods: "GET,PUT,PATCH,POST",
-  credentials: true // Allow cookies to be sent with the request
-}));
+
 
 
 // DataBase
