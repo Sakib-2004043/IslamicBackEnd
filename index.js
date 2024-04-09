@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const cors = require('cors');
 app.use(cors({
   origin: "http://localhost:5173",
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  methods: "GET,PUT,PATCH,POST",
   credentials: true // Allow cookies to be sent with the request
 }));
 
