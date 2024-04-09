@@ -2,8 +2,14 @@
 const express = require('express');
 const app = express();
 
+// CORS
 const cors = require('cors');
-app.use(cors());
+const corsOptions = {
+  origin: 'https://islamic-app-front-end.vercel.app',
+  methods: ['GET', 'POST', 'PUT','PATCH', 'DELETE'], // Specify allowed methods
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+app.use(cors(corsOptions));
 
 app.use(express.json());
 
@@ -16,9 +22,6 @@ require('dotenv').config();
 const bodyParser = require("body-parser");
 app.use(bodyParser.json()); 
 app.use(bodyParser.urlencoded({ extended: true }));
-
-// Cors
-
 
 
 // DataBase
