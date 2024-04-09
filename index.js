@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 // CORS
-const cors = require('cors');
+var cors = require('cors');
 const corsOptions = {
   origin: 'https://islamic-app-front-end.vercel.app',
   methods: ['GET', 'POST', 'PUT','PATCH', 'DELETE'], // Specify allowed methods
