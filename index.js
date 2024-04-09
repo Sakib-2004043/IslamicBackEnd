@@ -24,7 +24,7 @@ app.use(cors({
 
 // DataBase
 const mongoose = require('mongoose');
-mongoose.connect("mongodb+srv://sakib313:sakib313@islamiccluster.sbc761q.mongodb.net/islamicDB?retryWrites=true&w=majority&appName=IslamicCluster");
+mongoose.connect("mongodb+srv://joseph666:joseph666@islamiccluster.od3jr8o.mongodb.net/test?retryWrites=true&w=majority&appName=IslamicCluster");
 
 
 
