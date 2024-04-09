@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
-const port = 5000;
+const port = 3100;
 
 // dotENV **** It Only Works On BACKEND ****
 require('dotenv').config();
