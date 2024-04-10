@@ -3,15 +3,10 @@ const express = require('express');
 const app = express();
 
 // CORS
-var cors = require('cors');
-const corsOptions = {
-  origin: 'https://islamic-app-front-end.vercel.app',
-  methods: ['GET', 'POST', 'PUT','PATCH', 'DELETE'], // Specify allowed methods
-  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-};
-app.use(cors());
-
-app.use(express.json());
+const cors = require('cors');
+app.use(cors({
+  origin:"*"
+}))
 
 const port = 3100;
 
